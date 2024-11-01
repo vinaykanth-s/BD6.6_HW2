@@ -5,7 +5,7 @@ const { getAllGames, getGameById } = require('./controllers');
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+ 
 //endpoint to get all games 
 app.get('/games', async (req, res) => {
   const games = getAllGames();
